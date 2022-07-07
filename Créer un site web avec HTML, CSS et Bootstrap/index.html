@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Wiessner and house</title>
+
+</head>
+<body>
+    <div id="head">
+        <img src="photo/Fritz Wiessner & William House_8.5x5.5pouces.jpg" alt="image" class="logo">
+    </div>
+
+
+    <div id="main">
+        <div class="column" id="description">
+            <h3>Description</h3>
+            <p>L'association membre du comité national olympique et sportif français (CNOSF), de la fédération internationale d'escalade2 (IFSC) et de la Fédération internationale de ski alpinisme (ISMF)3. Elle est présidée depuis 2021 par Alain Carrière. Sa liste a été élue à 54,93 % des suffrages exprimés lors de l'assemblée générale à Nantes le 3 avril 2021, face à une liste alternative menée par Claude Chemelle4.</p>
+            <div class="button-center">
+                <button class="descriptionButton" type="button" onclick="alerte()" > Lire plus</button>
+                </div>
+        </div>
+
+        <div class="column" id="Evenement">
+            <h3>Evenement</h3>
+            <p>Depuis 15 ans, Fritz Wiessner Association organise la conférence française, l’étape française du Wiessner World Tour.
+                Cet événement regroupe des sportifs, experts métier et sociétés de services pour une journée de présentations et de transfert autour de la montagne et des projets de la communauté francophone.
+                </p>
+            <div class="button-center">
+                <a href="Pages/Evenements.html">
+                <button class="descriptionButton" type="button"> Lire plus</button>
+            </a>
+            </div>
+        </div>
+
+        <div class="column" id="Photo">
+            <h3>Photos</h3>
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="Photo/photo 1.jpg" style="width:100%">
+                <img class="mySlides" src="Photo/photo 2.jpg" style="width:100%">
+                <img class="mySlides" src="Photo/photo 3.jpg" style="width:100%">
+    
+              
+             
+              </div>           
+               <div class="button-center">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+        </div>
+    </div>
+
+    <div id="footer">
+       <h3 id="info">Info legale</h3>
+       <div id="infolegale">
+        <div id="puce">  <ul>
+            <li>Association loie 1905</li>
+            <li>Adresse : 12 rue de la narque</li>
+            <li>Telephone : 0765677654</li>
+        </ul></div>
+        <div id="reseau">
+            <a href="https://www.facebook.com">
+            <img src="Photo/logo-facebook-blanc.png" alt="Facebook" class="logomedia">
+            </a>
+            <a href="https://www.instagram.com">
+            <img src="Photo/640px-Instagram_icon.png" alt="instagram" class="logomedia">
+            </a>
+        </div>
+      
+       </div>
+
+
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+
+        function alerte()  {           
+alert("Seule la page web evenement est disponible");
+}
+        </script>
+</body>
+</html>
